@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Retweeted', 'Yes/NO'],
+          ['Orginal',<%= org%>],
+          ['Retweeted', <%= retw%>]
+        ]);
+
+        var options = {
+            backgroundColor: 'transparent',
+          title: 'Retweeted vs Orginal',
+          pieHole: 0.6,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body class="fullbleed">
+    <%= org+retw %>
+  <h1 class="mainTitle"> # - <%=title%> </h1>  
+    <div id="donutchart" style="width: 500px; height: 300px;"></div>
+  <footer>
+    A Team 5 Production
+    </footer>
+</body>
+</html>

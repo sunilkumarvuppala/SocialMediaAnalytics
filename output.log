@@ -1,0 +1,22 @@
+{ statuses: [],
+  search_metadata: 
+   { completed_in: 0.003,
+     max_id: 0,
+     max_id_str: '0',
+     query: 'DegreeDikhaoPMSaab',
+     count: 100,
+     since_id: 0,
+     since_id_str: '0' } }
+undefined
+undefined
+{ statuses: [],
+  search_metadata: 
+   { completed_in: 0.007,
+     max_id: 0,
+     max_id_str: '0',
+     query: 'baahubhali',
+     count: 100,
+     since_id: 0,
+     since_id_str: '0' } }
+undefined
+undefined

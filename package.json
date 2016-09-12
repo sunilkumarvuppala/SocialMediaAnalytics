@@ -1,0 +1,28 @@
+{
+  "name": "socialmediaanalytics",
+  "version": "0.0.1",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "latest",
+    "jsonminify": "^0.2.3",
+    "twitter": "latest",
+    "sentiment": "0.2.1",
+    "ntwitter": "0.5.0"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "description": "Fetches the tweets performs sentiment analysis and forms a dashboard using twitter api",
+  "devDependencies": {},
+  "keywords": [
+    "Twitter",
+    "Dashboard"
+  ],
+  "author": "Jai Kiran",
+  "license": "ISC"
+}

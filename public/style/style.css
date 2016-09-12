@@ -1,0 +1,181 @@
+body{
+    background:url('/images/back4.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Roboto,Noto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.mainTitle{
+    background: #202020;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-size: 34px;
+    opacity: 0.3;
+    margin-top: 10px; 
+}
+footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+}
+#mainSearch{
+    width: 600px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -100px;
+    position:absolute;
+}
+.input-info{
+    text-align: right;
+}
+.hashsearch-form {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+.hashsearch.open .hashsearch-form {
+    width: 80%;
+    height: 160px;
+    -webkit-transform: translate3d(0, 3em, 0);
+    -moz-transform: translate3d(0, 3em, 0);
+    transform: translate3d(0, 3em, 0);
+    top: 250px;
+}
+.hashsearch.open .hashsearch-input {
+    background: none;
+    border: 0;
+    text-transform: lowercase;
+    -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.hashsearch-input:focus {
+    outline: none;
+}
+.hashsearch-input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 10% 0 10px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    font-size: 2.0em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.hashsearch.hideInput .hashsearch-input {
+    color: transparent;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.hashsearch.open .hashsearch-input {
+    font-size: 5em;
+}
+#donutchart{
+     background-color: rgba(129, 129, 129, 0.22);
+}
+.noneList{
+    list-style: none;
+}
+#loader{
+ background: url('../images/loading.gif') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 9999;
+    top:70px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    opacity: 0.3;
+    text-align: center;
+    display: none;
+}
+#loader h1{
+    margin: 0px auto;
+    color: black;
+    margin-top:10%;
+}
+#mainSearch {
+	//display: none;
+}
+#dashboard{
+    background: rgba(0, 0, 0, 0.4);
+    max-width: 1300px;
+    min-width: 95%;
+    margin: 0px auto;
+    margin-top: 20px;
+    overflow: auto;
+    box-shadow: 1px 3px 15px -2px #000000;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    display: none;
+}
+.row-fuild{
+    padding-top: 10px;
+    overflow: hidden
+}
+.item {
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+}
+.block-update-card {
+  float: left;
+  margin:0px auto;
+  margin-left: 40px;
+  text-align: center;
+}
+.block-update-card .update-card-MDimentions {
+  width: 90px;
+  height:90px;
+  border-radius: 45px;
+}
+.media-heading{
+    margin:5px auto; 
+}
+.override{
+    margin-top: 0px;
+}
+.prevNextHolder{
+    margin-top: 90px;
+    background: none !important;
+    font-size: 40px;
+}
+.center{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 45px;
+}
+.canvasjs-chart-credit{display: none}
+.canvasjs-chart-container{margin-top: -100px}
+.green{
+    color:#03B903
+}
+#topList{
+    height: 250px;
+    overflow: auto;
+}

@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title id="hashTagTitle">Social Media Analytics</title>
+</head>
+<body class="fullbleed">
+<div id="loader">
+    <h1>flying to fetch your bidding......</h1><br/>
+    <h1 id="percentage"></h1>
+</div>
+<div id="defaultView">
+  <h1 class="mainTitle">Social Media Analytics - Twitter Dashboard</h1>  
+  <div id="backDiv" style="display:none;float:right;padding:5px"><a href="javascript:window.location.reload(false);" style="color:#fff;text-decoration:none;">Back</a></div>
+    <div id="mainSearch" class="container-fluid">
+    <div class="row-fuild" >
+        <div class="col-xs-12 col-lg-12">
+        <form id="searchForm" class="hashsearch-form" method="get">
+            <input name="q" class="hashsearch-input" id="hashsearch-input" placeholder="Type some Awesome here :)" autocomplete="off">
+            <p class="input-info">Press enter to generate Dashboard</p>
+        </form>
+        <br><br>
+        <% if(trends.length>0){ %>
+            <h4>Trending</h4>
+            <ul class='noneList'>
+            <% for(var i=0;i<trends.length;i++){%>
+                <li style="color:#eee"><%= trends[i]%></li>
+            <%}%>
+            </ul>
+        <%}%>
+    </div>
+        </div>
+    </div>
+    <div id="dashboard"  class="container-fluid">
+	<div class="row-fuild" >
+        <div class="col-xs-6 col-lg-6 col-xs-offset-3 col-lg-offset-3">
+            <h3 class="override feeling" style="text-align: center;"></h3>
+            <div id="TweetersFeeling"></div>
+        </div><!--top tweets-->
+    </div><!-- first row -->
+    <div class="row-fuild" >
+        <div class="col-xs-12 col-lg-6">
+            <h3 class="override" >Popular Twitratti</h3>
+            <div id="topTweeters"></div>
+        </div><!--top tweets-->
+        <div class="col-xs-12 col-lg-6">
+        <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner" id="carInner">
+                </div>
+                <a class="left carousel-control prevNextHolder" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control prevNextHolder" href="#myCarousel" data-slide="next">›</a>
+        </div>
+        </div><!--main images-->
+    </div><!-- second row -->
+    <div class="row-fuild">
+        <div class="col-xs-12 col-lg-6">
+            <h3>Total Reach</h3>
+            <h2 class="center"  id="totalReach"></h2>
+            <h3>Total Tweeters</h3>
+            <h2 class="center" id="totalusers"></h2>
+        </div>
+        <div class="col-xs-12 col-lg-6" >
+            <h3>Retweet vs Orginal</h3>
+            <div id="chartContainer" style="height:350px;" ></div>
+        </div>
+    </div><!-- third row -->
+    <div class="row-fuild">
+        <div class="col-xs-12 col-lg-12" >
+            <div id="topList" class="list-group">
+              <a href="#" class="list-group-item active">Top Tweets</a>
+            </div>
+        </div>
+    </div>
+    </div>
+  <footer>
+    A Team 5 Production
+  </footer>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/canvasjs.min.js"></script>
+<script src="js/twit.js"></script>
+<script>
+document.getElementById("hashsearch-input").focus();
+</script>
+</body>
+</html>
